@@ -6,18 +6,20 @@ ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+gem 'pg', '~> 0.20'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'rails_12factor', group: :production
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'acts-as-taggable-on', git: 'https://github.com/mbleigh/acts-as-taggable-on'
+gem 'acts-as-taggable-on' #, git: 'https://github.com/mbleigh/acts-as-taggable-on'
 gem 'acts_as_follower'
-gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
+gem 'devise' #, git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
 gem 'jwt', '~> 1.5.4'
 gem 'puma'
 gem 'rack-cors', '~> 0.4.0'
